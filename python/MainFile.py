@@ -1,16 +1,29 @@
+from bydate import *
+from bysize import *
+from byextension import *
+
+
+
 class Decide:
-    
+
     def __init__(self, choice, path):
         self.choice = choice
         self.path = path
 
     def choose(self):
         if self.choice == 1:
-            return self.runbysize(self.path)
+             return self.runbydate(self.path)
         elif choice == 2:
-            return self.runbyextension(self.path)
+             return self.runbysize(self.path)
         elif choice == 3:
-            return self.runbydate(self.path)
+            return self.runbyextension(self.path)
+
+
+
+    def runbydate(self, path):
+        a = bydate(self.path)
+
+        return a
 
     def runbysize(self, path):
         a = sizecheck(self.path)
@@ -20,7 +33,17 @@ class Decide:
         a = sort_exten(self.path)
         return a
 
-    def runbydate(self, path):
-        a = bydate(self.path)
 
-        return a
+
+
+if __name__ == "__main__":
+    print ("--------------------------------")
+    print ("Welcome to Junk File Organizer")
+
+
+
+    
+    
+    
+    
+    
